@@ -1,0 +1,19 @@
+[project]
+name = "attendee-kit"
+version = "0.1.0"
+description = "Workshop kit: How to Build Agentic AI Workflows for Research"
+readme = "START_HERE.md"
+# Minimum versions only, so uv picks what fits your Python (3.10+).
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=1.5",
+    "numpy>=1.23",
+    "matplotlib>=3.6",
+    "plotly>=5.0",
+    # MCP Python SDK, used by mcp/sqlite_server.py in Stage 5
+    "mcp>=1.2",
+]
+
+[tool.uv]
+# A folder of scripts, not an installable package.
+package = false

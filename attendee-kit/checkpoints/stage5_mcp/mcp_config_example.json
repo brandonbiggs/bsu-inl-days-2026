@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "gistemp": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "python", "mcp/sqlite_server.py", "outputs/data.db"],
+      "env": {}
+    }
+  }
+}
