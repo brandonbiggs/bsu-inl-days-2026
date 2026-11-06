@@ -35,7 +35,11 @@ The session teaches a workflow that addresses those risks:
 
 You need Claude Code with a paid Claude plan or an API key (the free claude.ai plan doesn't include Claude Code), and [uv](https://docs.astral.sh/uv/).
 
-1. Download [`dist/attendee-kit.zip`](dist/attendee-kit.zip) and unzip it, or use the [`attendee-kit/`](attendee-kit/) folder directly.
+1. Download [`attendee-kit.zip`](https://github.com/brandonbiggs/bsu-inl-days-2026/raw/main/dist/attendee-kit.zip) and unzip it, or use the [`attendee-kit/`](attendee-kit/) folder directly. From a terminal:
+   ```
+   curl -LO https://github.com/brandonbiggs/bsu-inl-days-2026/raw/main/dist/attendee-kit.zip
+   unzip attendee-kit.zip
+   ```
 2. Follow the setup in [`attendee-kit/README.md`](attendee-kit/README.md). In short:
    ```
    uv sync
