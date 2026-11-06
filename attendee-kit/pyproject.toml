@@ -2,7 +2,7 @@
 name = "attendee-kit"
 version = "0.1.0"
 description = "Workshop kit: How to Build Agentic AI Workflows for Research"
-readme = "START_HERE.md"
+readme = "README.md"
 # Minimum versions only, so uv picks what fits your Python (3.10+).
 requires-python = ">=3.10"
 dependencies = [

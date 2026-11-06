@@ -93,7 +93,7 @@ def claude_cli():
     return (out.stdout or out.stderr).strip().splitlines()[0]
 
 
-check("Python 3.10+", python_version, "Run: uv sync, then uv run python verify_setup.py (uv installs a suitable Python; see PREWORK.md).")
+check("Python 3.10+", python_version, "Run: uv sync, then uv run python verify_setup.py (uv installs a suitable Python; see README.md).")
 for mod in ["pandas", "numpy", "matplotlib", "plotly"]:
     check(f"package: {mod}", package(mod), f"Run: {PIP_HINT}")
 check("package: mcp (for Stage 5)", mcp_sdk, f"Run: {PIP_HINT}")
@@ -111,7 +111,7 @@ for ok, name, detail, hint in results:
 fails = sum(not ok for ok, *_ in results)
 print("-" * 60)
 if fails:
-    print(f"{fails} check(s) FAILED. Fix them using the hints above or PREWORK.md, then run this again.")
+    print(f"{fails} check(s) FAILED. Fix them using the hints above or README.md, then run this again.")
     print("Still stuck? Reply to the pre-work email and paste this whole output.")
 else:
     print("All checks PASSED. You are ready for the workshop.")
